@@ -108,11 +108,11 @@ class ProjectController extends Controller
         $slug = Str::slug($form_data['title'],'-');
         $project->slug = $slug;
         $project->content = $form_data['content'];
+        $exists = Project::where('title','LIKE', $form_data['title'])
+        ->where('id', '!=', $project->id)->get();
         if($exists->isNotEmpty()){
             return redirect()->route('admin.projects.edit', compact('project'))->withErrors(['Titolo gia\' inserito']);
         }
-        $exists = Project::where('title','LIKE', $form_data['title'])
-        ->where('id', '!=', $project->id)->get();
         $project->title = $form_data['title'];
         $project->update();
 
