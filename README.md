@@ -25,3 +25,8 @@ Creiamo un nuovo componente ProjectCard, che corrisponde ad una card per visuali
 
 Bonus:
 Gestire la paginazione dei risultati
+
+DAY 8
+Ciao a tutti, oggi continuate con l'esercizio Boolfolio implementando una form per inviare una mail. Seguite i passaggi visti a lezione.
+Bonus: gestite gli errori ed i relativi messaggi se l'utente sbaglia ad inserire valori nei campi
+SUPER BONUS: creare una Thank You page alla quale essere reindirizzati se la mail viene inviata con successo.
